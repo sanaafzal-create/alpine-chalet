@@ -1,0 +1,77 @@
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../assets/hero.jpg');
+
+    min-height: 100vh;
+    width: 100%;
+    background-position: 0 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper {
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 28px);
+}
+.hero-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 650px;
+
+
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 70px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 24px;
+
+    }
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 58px;
+    }
+    .button {
+        margin-top: 28px;
+    }
+}
+
+pin-code{ 
+  padding: 0; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content:center;
+ 
+  
+} 
+ 
+.pin-code input { 
+  border: none; 
+  text-align: center; 
+  width: 62px;
+  height:62px;
+  font-size: 36px; 
+  background-color: #fff;
+  margin-right:12px;
+  outline: none;
+  border-radius: 8px;
+} 
+
+
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
