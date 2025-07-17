@@ -1,5 +1,5 @@
 .main {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../assets/hero.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/hero.jpg');
 
     min-height: 100vh;
     width: 100%;
@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: calc(100vh - 28px);
+    min-height: calc(100vh - 28px);
 }
 .hero-text {
     display: flex;
@@ -40,7 +40,7 @@
         margin-bottom: 58px;
     }
     .button {
-        margin-top: 28px;
+        margin-top: 44px;
     }
 }
 
@@ -59,7 +59,7 @@ pin-code{
   width: 62px;
   height:62px;
   font-size: 36px; 
-  background-color: #fff;
+  background-color: #FFFFFFCC;
   margin-right:12px;
   outline: none;
   border-radius: 8px;
@@ -74,4 +74,86 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+/* Step 2 Css  */
+
+.steps-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hero-2.jpg');
+        background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .hero-text {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .info-text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+.login-detail-wrapper {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+margin-bottom: 28px;
+.login-detail {
+    font-size: 16x;
+    font-weight: 500;
+}
+}
+
+.info-wrapper {
+    display:flex; 
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    .info {
+        align-items: start;
+    }
+}
+.info-time-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    .info-time {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.info-btns {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+    justify-content: center;
+}
+
+.map-card {
+    min-height: 420px !important;
+    margin-bottom: 32px;
+    max-width: 800px !important;
+    padding: 40px !important;
+    .map-img img {
+        margin-top: 12px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+.map-btn {
+    margin-bottom: 32px;
 }
