@@ -14,6 +14,21 @@
     flex-direction: column;
     min-height: calc(100vh - 28px);
 }
+
+.step-2 {
+    .hero-text {
+            min-height: calc(100vh - 170px) !important;
+            
+    }
+}
+
+@media (max-width: 1600px) {
+    .step-2 {
+    .hero-text {
+            margin-top: 24px;
+    }
+}
+}
 .hero-text {
     display: flex;
     align-items: center;
