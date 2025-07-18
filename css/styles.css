@@ -15,6 +15,13 @@
     min-height: calc(100vh - 28px);
 }
 
+.step-2 { 
+    .hero-text {
+        h1 {
+            margin-bottom: 64px;
+        }
+    }
+}
 
 
 @media (max-width: 1600px) {
@@ -25,13 +32,6 @@
 
 }
 
-.hero-text {
-
-    p {
-        
-        margin-bottom: 120px;
-}
-}
 }
 .hero-text {
     display: flex;
@@ -48,7 +48,7 @@
         line-height: 70px;
         color: #fff;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 44px;
 
     }
     p {
@@ -56,7 +56,7 @@
         color: #fff;
         font-size: 18px;
         font-weight: 500;
-        margin-bottom: 58px;
+        margin-bottom: 100px;
     }
     .button {
         margin-top: 44px;
@@ -127,7 +127,7 @@ input::-webkit-inner-spin-button {
     gap: 4px;
 margin-bottom: 28px;
 .login-detail {
-    font-size: 16x;
+    font-size: 16px;
     font-weight: 500;
 }
 }
@@ -135,8 +135,8 @@ margin-bottom: 28px;
 .info-wrapper {
     display:flex; 
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
+  
+    gap: 100px;
     width: 100%;
     .info {
         align-items: start;
@@ -160,6 +160,7 @@ margin-bottom: 28px;
     gap: 36px;
     width: 100%;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .map-card {
