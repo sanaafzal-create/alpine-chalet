@@ -249,6 +249,102 @@ margin-bottom: 28px;
         }
     }
 }
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+    max-width: 700px;
+    width: 100%;
+   
+    background-color: transparent;
+    .large-card {
+        grid-column: span 2;
+        max-width: 100% !important;
+    }
+}
+
+.contact-card { 
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: auto !important;
+    min-height: auto !important;
+    width: auto !important;
+    background-color: #FBF4E9!important;
+
+    
+}
+.contact-content-card {
+    span {
+        font-size: 14px;
+        
+    }
+    h5 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 4px;
+    }
+}
+
+.route-cards {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 12px;
+}
+.key-cards {
+        align-items: normal;
+}
+.key-card {
+
+   h2 {
+        font-weight: 500;
+        font-size: 36px;
+    }
+     h5 {
+        margin-top: 12px !important;
+        margin-bottom: 16px;
+     }
+}
+.route-card {
+    background-color: #FBF4E9!important;
+    max-width: 270px !important;
+    min-height: auto !important;
+ 
+ h5 {
+        font-weight: 500;
+        font-size: 22px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        list-style: disc;
+        padding-left: 28px;
+        padding-bottom: 24px;
+    }
+   
+}
+.get-key-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  
+}
+.get-key-card {
+    min-height: 220px !important;
+    background-color: #FFFFFFCC !important;
+
+    .thanks-text {
+        color: #978667 !important;
+        font-size: 28px !important; 
+        font-weight: 500 !important;
+    }
+}
 @media (max-width:1024px) {
 
     .guide-cards {
