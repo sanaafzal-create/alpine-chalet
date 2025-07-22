@@ -271,7 +271,7 @@ input::-webkit-inner-spin-button {
     max-width: 300px !important;
     background-color: #fff !important;
 
-    .img-wrapper {
+    .guide-img-wrapper {
         position: relative;
 
         span {
