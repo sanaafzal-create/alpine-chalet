@@ -13,7 +13,51 @@
 </head>
 
 <body>
-    <div class="sidebar"></div>
+    <div id="toggle-btn" onclick="toggleSidebar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+            <path d="M4 18L20 18" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <a href="./wlan">
+                <li>WLAN</li>
+            </a>
+            <a href="./guide.html">
+                <li>Chalet Guide</li>
+            </a>
+            <a href="./route">
+                <li>Route & Parking</li>
+            </a>
+            <a href="./amenuties">
+                <li>Amenities</li>
+            </a>
+            <a href="./adventure">
+                <li> Adventure</li>
+            </a>
+            <a href="./safety.html">
+                <li>Saftey & Contacts</li>
+            </a>
+            <a href="./waste.html">
+                <li>Waste & Recycling</li>
+            </a>
+            <a href="./houserules.html">
+                <li>House Rules</li>
+
+            </a>
+            <a href="./checklist.html">
+                <li>
+                    Checklist
+
+                </li>
+            </a>
+            <a href="./feedback.html">
+                <li class="last">FeedBack</li>
+            </a>
+        </ul>
+    </div>
     <main class="main steps-wrapper ">
         <div class="wrapper">
             <div class="logo">
@@ -95,7 +139,7 @@
 
     </main>
 
-    <script src="script.js"></script>
+    <script src="./js/siderbar.js"></script>
 </body>
 
 </html>

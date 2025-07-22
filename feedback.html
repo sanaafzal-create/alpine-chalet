@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/base/reset.css">
     <link rel="stylesheet" href="./css/components/components.css">
+    <link rel="stylesheet" href="./css/components/rating.css">
 
 
 </head>
@@ -58,34 +59,45 @@
             </a>
         </ul>
     </div>
-    <main class="main steps-wrapper ">
+    <main class="main steps-wrapper step-2">
         <div class="wrapper">
             <div class="logo">
                 <img src="./assets/logo.png" alt="logo" width="200px">
             </div>
             <div class="hero-text">
-                <h1>Getting your Key</h1>
-                <div class="route-cards key-cards">
-                    <div class="card route-card key-card">
-                        <h2>1</h2>
-                        <h5>Locate your key box</h5>
-                        <p>You’ll find the key box mounted to the left of the entrance door.</p>
-                    </div>
-                    <div class="card route-card key-card">
-                        <h2>2</h2>
-                        <h5>Enter Your PIN</h5>
-                        <p>We’ll send you the 4-digit PIN code via email or SMS shortly before your arrival.</p>
-                    </div>
-                    <div class="card route-card key-card">
-                        <h2>3</h2>
-                        <h5>Unlock and Enjoy</h5>
-                        <p>Open the box, grab your key — you're all set to check in!</p>
-                    </div>
+                <h1>We’d Love Your Feedback</h1>
+
+                <div class="card feedback-cards">
+                    <h3>Rate your experience with us</h3>
+                    <form class="feedback-form" id="feedback-form">
+                        <div class="star-widget">
+                            <input type="radio" name="star" id="rate-5" value="5">
+                            <label for="rate-5" class="fa-solid fa-star"></label>
+                            <input type="radio" name="star" id="rate-4" value="4">
+                            <label for="rate-4" class="fa-solid fa-star"></label>
+                            <input type="radio" name="star" id="rate-3" value="3">
+                            <label for="rate-3" class="fa-solid fa-star"></label>
+                            <input type="radio" name="star" id="rate-2" value="2">
+                            <label for="rate-2" class="fa-solid fa-star"></label>
+                            <input type="radio" name="star" id="rate-1" value="1">
+                            <label for="rate-1" class="fa-solid fa-star"></label>
+
+                            <p id="error-rating"></p>
+                        </div>
+                        <h4>Tell us what you loved or what could be better.</h4>
+                        <textarea name="feedback" id="feedback"></textarea>
+                        <div class="submit">
+                            <button class="button submit-btn" type="submit">Submit</button>
+
+                        </div>
+
+                    </form>
+
                 </div>
 
-                <div class="info-btns map-btn">
-                    <button class="button outline">Previous</button>
-                    <button class="button">Next</button>
+                <div class="info-btns">
+
+                    <button class="button" type="button">Back to Home</button>
                 </div>
 
             </div>
@@ -93,8 +105,9 @@
         </div>
 
     </main>
-
+    <script src="https://kit.fontawesome.com/100302342b.js" crossorigin="anonymous"></script>
     <script src="./js/siderbar.js"></script>
+
 </body>
 
 </html>
