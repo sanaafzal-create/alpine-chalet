@@ -552,6 +552,154 @@ input::-webkit-inner-spin-button {
     }
 }
 
+.amenuties .get-key-cards {
+    display: flex;
+    align-items: normal;
+    gap: 8px !important;
+
+    .get-key-card {
+        height: 290px;
+        max-width: max-content;
+        padding: 32px 24px;
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+
+        h5 {
+            margin-top: 16px;
+        }
+    }
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+
+}
+
+.adventure-cards {
+    .swiper-wrapper {
+        padding: 0 32px !important;
+    }
+
+
+
+}
+
+.adventure {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+
+        transform: translateY(200%) !important;
+
+    }
+}
+
+.swiper-wrapper {
+    padding: 0 670px;
+}
+
+.swiper-button-prev {
+    color: white !important;
+    background-color: #978667 !important;
+    height: 56px !important;
+    width: 56px !important;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(80%);
+    top: 50%;
+    margin-top: 0 !important;
+    left: 100px !important;
+}
+
+.swiper-button-prev::after {
+    font-size: 24px !important;
+}
+
+.swiper-button-next {
+    color: white !important;
+    background-color: #978667 !important;
+    height: 56px !important;
+    width: 56px !important;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(80%);
+    top: 50%;
+    margin-top: 0 !important;
+    right: 80px !important;
+}
+
+.swiper-button-next::after {
+    font-size: 24px !important;
+}
+
+.adventure-cards {
+    height: 400px;
+
+    .guide-card {
+        img {
+            height: 130px !important;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-link {
+            text-decoration: underline;
+
+            font-weight: 500;
+        }
+
+        p {
+            margin-top: 12px;
+            font-size: 15px;
+        }
+    }
+
+    .card-tags {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 16px;
+        padding-bottom: 24px;
+        max-width: 300px;
+        overflow-x: auto;
+        padding-right: 12px;
+        cursor: grab;
+
+        .tag {
+            padding: 4px 14px;
+            background: #F4E0EA;
+            font-size: 14px;
+            white-space: nowrap;
+            border-radius: 16px;
+        }
+    }
+}
+
+.card-hero-content {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: space-between;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 @media (max-width:1024px) {
 
     .guide-cards {
@@ -560,6 +708,7 @@ input::-webkit-inner-spin-button {
 
     }
 }
+
 
 @media (max-width:768px) {
 
