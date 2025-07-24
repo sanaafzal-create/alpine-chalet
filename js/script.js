@@ -10,20 +10,24 @@ parking1Button.addEventListener("click", () => {
     parking1Button.classList.remove("tab-white");
     parking2Button.classList.add("tab-white");
     parking1Image.style.position = "absolute";
-    parking1Image.style.transform = "translateX(120%)";
+    parking1Image.style.transform = "translateX(200%)";
     parking2Image.style.opacity = "100";
     parking2Image.style.position = "static";
     parking2Image.style.transform = "translateX(0)";
+    parking2Image.style.display = "block";
     parking1Image.style.opacity = "0";
+    parking1Image.style.display = "none";
 })
 parking2Button.addEventListener("click", () => {
     parking2Button.classList.remove("tab-white");
     parking1Button.classList.add("tab-white");
     parking2Image.style.position = "absolute";
-    parking2Image.style.transform = "translateX(120%)";
+    parking2Image.style.transform = "translateX(200%)";
     parking1Image.style.position = "static";
     parking1Image.style.transform = "translateX(0)";
+    parking1Image.style.display = "block";
     parking1Image.style.opacity = "100";
     parking2Image.style.opacity = "0";
+    parking2Image.style.display = "none";
 })
 

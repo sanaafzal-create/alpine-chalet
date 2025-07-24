@@ -459,7 +459,8 @@ input::-webkit-inner-spin-button {
 
     .parking-img-2 {
         position: absolute;
-        transform: translateX(120%);
+        transform: translateX(200%);
+        display: none;
         transition: 0.5s ease;
     }
 
@@ -587,15 +588,12 @@ input::-webkit-inner-spin-button {
 
 }
 
-.adventure {
 
-    .swiper-button-prev,
-    .swiper-button-next {
 
-        transform: translateY(200%) !important;
-
-    }
+.swiper-wrap {
+    position: relative;
 }
+
 
 .swiper-wrapper {
     padding: 0 670px;
@@ -610,10 +608,10 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(80%);
+    transform: translateY(-50%);
     top: 50%;
     margin-top: 0 !important;
-    left: 100px !important;
+    left: -80px !important;
 }
 
 .swiper-button-prev::after {
@@ -629,10 +627,10 @@ input::-webkit-inner-spin-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(80%);
+    transform: translateY(-50%);
     top: 50%;
     margin-top: 0 !important;
-    right: 80px !important;
+    right: -80px !important;
 }
 
 .swiper-button-next::after {
@@ -700,6 +698,7 @@ input::-webkit-inner-spin-button {
     scrollbar-width: none;
 }
 
+
 @media (max-width:1024px) {
 
     .guide-cards {
@@ -717,6 +716,10 @@ input::-webkit-inner-spin-button {
 
         grid-template-columns: repeat(2, 1fr);
 
+    }
+
+    .get-key-cards {
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -736,5 +739,70 @@ input::-webkit-inner-spin-button {
             width: 100%;
             height: auto;
         }
+    }
+
+    #sidebar {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 40px !important;
+        line-height: 56px !important;
+    }
+
+    .map-card {
+        max-width: 320px !important;
+    }
+
+    .info-btns {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px !important;
+
+        button {
+
+            margin: 0 !important;
+        }
+
+
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr !important;
+
+        .large-card {
+            grid-column: span 1 !important;
+        }
+    }
+
+    .card {
+        max-width: 100% !important;
+
+    }
+
+    .route-cards {
+        flex-direction: column !important;
+    }
+
+    .tabs {
+        flex-direction: column;
+
+        .button {
+            margin: 0 !important;
+        }
+    }
+
+    .guide-cards-wrapper {
+        grid-template-columns: 1fr !important;
+
+        .guide-card {
+            img {
+                height: 200px !important;
+            }
+        }
+    }
+
+    .star-widget {
+        gap: 4px !important;
     }
 }
