@@ -16,7 +16,7 @@ function toggleSidebar() {
             <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
             <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
         </svg>`;
-        toggle.style.left = '0px';
-        toggle.style.background = 'rgba(0, 0, 0, 0.4)';
+        toggle.style.left = '24px';
+
     }
 }

@@ -13,12 +13,15 @@
 </head>
 
 <body>
-    <div id="toggle-btn" onclick="toggleSidebar()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
-            <path d="M4 18L20 18" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-        </svg>
+    <div class="sidebar-btn-toggle">
+        <span onclick="toggleSidebar()" id="toggle-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L20 18" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </span>
     </div>
     <div id="sidebar">
         <ul>
@@ -92,8 +95,14 @@
                 </div>
 
                 <div class="info-btns map-btn">
-                    <button class="button outline">Previous</button>
-                    <button class="button">Next</button>
+                    <a href="./step-6.html">
+
+                        <button class="button outline">Previous</button>
+                    </a>
+                    <a href="./amenuties.html">
+
+                        <button class="button">Next</button>
+                    </a>
                 </div>
 
             </div>

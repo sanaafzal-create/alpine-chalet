@@ -25,11 +25,10 @@
     background: rgba(255, 255, 255, 0.1);
 }
 
-#toggle-btn {
+.sidebar-btn-toggle {
     position: fixed;
     left: 0;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
     color: white;
     padding: 10px 15px;
     cursor: pointer;
@@ -39,6 +38,11 @@
     transition: left 0.3s ease;
     border-top-right-radius: 20px;
     overflow-y: auto;
+}
+
+#toggle-btn {
+    position: fixed;
+    left: 24px;
 }
 
 #sidebar.show {
@@ -597,7 +601,8 @@ input::-webkit-inner-spin-button {
 
 
 
-.swiper-button-prev {
+.swiper-button-prev,
+.splide__arrow--prev {
     color: white !important;
     background-color: #978667 !important;
     height: 56px !important;
@@ -616,7 +621,8 @@ input::-webkit-inner-spin-button {
     font-size: 24px !important;
 }
 
-.swiper-button-next {
+.swiper-button-next,
+.carousel-btn {
     color: white !important;
     background-color: #978667 !important;
     height: 56px !important;
@@ -631,6 +637,14 @@ input::-webkit-inner-spin-button {
     right: -80px !important;
 }
 
+.next {
+    margin-left: 24px;
+}
+
+.prev {
+    margin-right: 24px;
+}
+
 .swiper-button-next::after {
     font-size: 24px !important;
 }
@@ -638,14 +652,18 @@ input::-webkit-inner-spin-button {
 .swiper-slide {
     min-height: 300px !important;
     padding: 32px 24px !important;
+
 }
 
-.adventure-cards {
-    height: 400px;
+.carousel-track {
+    padding: 0 12px;
 
     .guide-card {
+
+
         img {
             height: 130px !important;
+            width: 100% !important;
         }
 
         .card-content {
@@ -821,6 +839,48 @@ input::-webkit-inner-spin-button {
     .swiper-button-next,
     .swiper-button-prev {
         display: none !important;
+    }
+
+    .carousel-track {
+
+
+        .guide-card {
+            margin: 0 !important;
+
+            img {
+                height: 130px !important;
+                width: 100% !important;
+            }
+
+            .card-content {
+                padding: 16px;
+            }
+
+            .card-link {
+                text-decoration: underline;
+
+                font-weight: 500;
+            }
+
+            a {
+                font-size: 14px;
+            }
+
+            p {
+                margin-top: 12px;
+                font-size: 14px;
+            }
+        }
+
+        .card-tags {
+
+            gap: 6px;
+
+            max-width: 250px;
+
+
+
+        }
     }
 }
 

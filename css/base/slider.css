@@ -1,0 +1,57 @@
+.custom-carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-track li {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+    .carousel-track li {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-track li {
+        min-width: 33.3333%;
+    }
+}
+
+.carousel-btn {
+    background-color: #222;
+    color: white;
+    border: none;
+    height: 52px !important;
+    width: 52px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background-color: #444;
+}

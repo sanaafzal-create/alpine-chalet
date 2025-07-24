@@ -8,17 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/base/reset.css">
     <link rel="stylesheet" href="./css/components/components.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/base/slider.css">
 
 </head>
 
 <body>
-    <div id="toggle-btn" onclick="toggleSidebar()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
-            <path d="M4 18L20 18" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
-        </svg>
+    <div class="sidebar-btn-toggle">
+        <span onclick="toggleSidebar()" id="toggle-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18L20 18" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 12L20 12" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+                <path d="M4 6L20 6" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </span>
     </div>
     <div id="sidebar">
         <ul>
@@ -73,12 +76,12 @@
             </div>
             <div class="hero-text amenuties adventure">
                 <h1>Adventure starts here</h1>
-                <div class="swiper-wrap">
 
-                    <div class="swiper mySwiper adventure-cards">
+                <!-- <div id="splide" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list adventure-cards">
+                            <li class="splide__slide card guide-card">
 
-                        <div class="guide-cards guide-cards-wrapper swiper-wrapper ">
-                            <div class="card guide-card swiper-slide">
 
                                 <img src="./assets/adventure-img-1.png" alt="flamming" class="card-img">
 
@@ -98,8 +101,10 @@
                                         <div class="tag">city stroll</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card guide-card swiper-slide">
+
+                            </li>
+                            <li class="splide__slide card guide-card">
+
 
                                 <img src="./assets/adventure-img-2.png" alt="flamming" class="card-img">
 
@@ -118,8 +123,10 @@
                                     </div>
 
                                 </div>
-                            </div>
-                            <div class="card guide-card swiper-slide">
+
+                            </li>
+                            <li class="splide__slide card guide-card">
+
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
 
@@ -127,7 +134,8 @@
 
                                     <div class="card-content">
                                         <a href="https://www.churbergbahnen.ch/de"
-                                            class="card-heading card-link">Berg-Restaurants / Mountain restaurants</a>
+                                            class="card-heading card-link">Berg-Restaurants / Mountain
+                                            restaurants</a>
                                         <p>📍 Olympic Street</p>
 
                                     </div>
@@ -137,8 +145,10 @@
                                         <div class="tag">mountain</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card guide-card swiper-slide">
+
+                            </li>
+                            <li class="splide__slide card guide-card ">
+
 
                                 <img src="./assets/adventure-img-4.png" alt="flamming" class="card-img">
 
@@ -158,8 +168,11 @@
                                         <div class="tag">bike rental</div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card guide-card swiper-slide">
+
+
+                            </li>
+                            <li class="splide__slide card guide-card">
+
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
 
@@ -178,17 +191,134 @@
                                         <div class="tag">restaurants</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+
+                            </li>
+                        </ul>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                </div> -->
+
+                <div class="custom-carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">‹</button>
+                    <div class="carousel-track-wrapper">
+                        <ul class="carousel-track">
+                            <li class="card guide-card">
+                                <img src="./assets/adventure-img-1.png" alt="Image 1" class="card-img" />
+                                <div class="card-hero-content">
+                                    <div class="card-content">
+                                        <a href="#" class="card-heading card-link">Cardboard & Paper</a>
+                                        <p>📍Kasernenstrasse 15 7007 Chur</p>
+                                    </div>
+                                    <div class="card-tags scroll-container">
+                                        <div class="tag">ski</div>
+                                        <div class="tag">city</div>
+                                        <div class="tag">transportation</div>
+                                        <div class="tag">city stroll</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide card guide-card">
+
+
+                                <img src="./assets/adventure-img-2.png" alt="flamming" class="card-img">
+
+                                <div class="card-hero-content">
+                                    <div class="card-content">
+                                        <a href="https://www.churbergbahnen.ch/de"
+                                            class="card-heading card-link">Schneeschuh-Touren / Snowshoe tours
+                                        </a>
+                                        <p>📍 Brambrüesch, Dreibündenstein</p>
+
+                                    </div>
+                                    <div class="card-tags scroll-container">
+                                        <div class="tag">snow</div>
+                                        <div class="tag">tours</div>
+                                        <div class="tag">mountain</div>
+                                    </div>
+
+                                </div>
+
+                            </li>
+                            <li class="splide__slide card guide-card">
+
+
+                                <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
+
+                                <div class="card-hero-content">
+
+                                    <div class="card-content">
+                                        <a href="https://www.churbergbahnen.ch/de"
+                                            class="card-heading card-link">Berg-Restaurants / Mountain
+                                            restaurants</a>
+                                        <p>📍 Olympic Street</p>
+
+                                    </div>
+                                    <div class="card-tags scroll-container">
+                                        <div class="tag">restaurants</div>
+
+                                        <div class="tag">mountain</div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="splide__slide card guide-card ">
+
+
+                                <img src="./assets/adventure-img-4.png" alt="flamming" class="card-img">
+
+                                <div class="card-hero-content">
+
+                                    <div class="card-content">
+                                        <a href="https://www.churbergbahnen.ch/de"
+                                            class="card-heading card-link">Ski-und
+                                            Sportschule Mountainbike-Verleih / Ski and sport school, mountainbike
+                                            rental</a>
+                                        <p>📍 Brambrüesch</p>
+
+                                    </div>
+                                    <div class="card-tags scroll-container">
+                                        <div class="tag">sport school</div>
+                                        <div class="tag">ski school</div>
+                                        <div class="tag">bike rental</div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                            <li class="splide__slide card guide-card">
+
+
+                                <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
+
+
+                                <div class="card-hero-content">
+                                    <div class="card-content">
+                                        <a href="https://www.churbergbahnen.ch/de"
+                                            class="card-heading card-link">(Nacht-)Schlitteln und Fondue-Plausch /
+                                            (night-)Sledging and Fondue</a>
+                                        <p>📍 Olympic Street</p>
+
+                                    </div>
+                                    <div class="card-tags scroll-container">
+                                        <div class="tag">adventure</div>
+                                        <div class="tag">sledging</div>
+                                        <div class="tag">restaurants</div>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">›</button>
                 </div>
-
-
                 <div class="info-btns map-btn">
-                    <button class="button outline">Previous</button>
-                    <button class="button">Next</button>
+                    <a href="./amenuties.html">
+
+                        <button class="button outline">Previous</button>
+                    </a>
+                    <a href="./safety.html">
+                        <button class="button">Next</button>
+
+                    </a>
                 </div>
 
             </div>
@@ -196,23 +326,53 @@
         </div>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/siderbar.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 8,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            allowTouchMove: false,
+        let currentIndex = 0;
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".carousel-track li");
+
+        function updateSlidePosition() {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            track.style.transform = `translateX(-${currentIndex * (slideWidth + 16)}px)`;
+        }
+
+        function visibleSlides() {
+            const width = window.innerWidth;
+            if (width >= 1024) return 3;
+            if (width >= 768) return 2;
+            return 1;
+        }
+
+        function moveSlide(direction) {
+            const maxIndex = slides.length - visibleSlides();
+            currentIndex += direction;
+
+            // Looping behavior
+            if (currentIndex > maxIndex) {
+                currentIndex = 0;
+            }
+            if (currentIndex < 0) {
+                currentIndex = maxIndex;
+            }
+
+            updateSlidePosition();
+        }
+
+        // Autoplay every 5 seconds
+        let autoplayInterval = setInterval(() => moveSlide(1), 5000);
+
+        // Pause on hover, resume on leave
+        const carouselContainer = document.querySelector(".custom-carousel-container");
+        carouselContainer.addEventListener("mouseenter", () => clearInterval(autoplayInterval));
+        carouselContainer.addEventListener("mouseleave", () => {
+            autoplayInterval = setInterval(() => moveSlide(1), 3000);
         });
+
+
+        window.addEventListener("resize", updateSlidePosition);
+        window.addEventListener("load", updateSlidePosition);
         const scrollContainers = document.querySelectorAll('.scroll-container');
 
         scrollContainers.forEach(container => {
@@ -241,11 +401,12 @@
                 if (!isDown) return;
                 e.preventDefault();
                 const x = e.pageX - container.offsetLeft;
-                const walk = (x - startX) * 2; // scroll speed
+                const walk = (x - startX) * 2;
                 container.scrollLeft = scrollLeft - walk;
             });
         });
     </script>
+
 </body>
 
 </html>
