@@ -575,7 +575,7 @@ input::-webkit-inner-spin-button {
 .swiper {
     width: 100%;
     height: 100%;
-    max-width: 1024px;
+    max-width: 900px;
 
 }
 
@@ -595,9 +595,7 @@ input::-webkit-inner-spin-button {
 }
 
 
-.swiper-wrapper {
-    padding: 0 670px;
-}
+
 
 .swiper-button-prev {
     color: white !important;
@@ -635,6 +633,11 @@ input::-webkit-inner-spin-button {
 
 .swiper-button-next::after {
     font-size: 24px !important;
+}
+
+.swiper-slide {
+    min-height: 300px !important;
+    padding: 32px 24px !important;
 }
 
 .adventure-cards {
@@ -807,5 +810,24 @@ input::-webkit-inner-spin-button {
 
     .star-widget {
         gap: 4px !important;
+    }
+
+    .swiper {
+
+        max-width: 340px;
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .swiper {
+
+        max-width: 280px;
+
     }
 }
