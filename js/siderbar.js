@@ -8,7 +8,7 @@ function toggleSidebar() {
         toggle.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
 <path d="M16 8L8 16M8.00001 8L16 16" stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
-        toggle.style.left = '160px';
+        toggle.style.left = '200px';
         toggle.style.background = 'transparent';
     } else {
         toggle.innerHTML = `  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24" fill="none">
