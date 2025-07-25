@@ -914,6 +914,36 @@ input::-webkit-inner-spin-button {
         gap: 24px;
         align-items: start;
     }
+
+    .card-link {
+        font-size: 14px !important;
+    }
+
+    .carousel-track {
+
+
+        .guide-card {
+            p {
+                margin-top: 12px;
+                font-size: 12px;
+            }
+        }
+
+        .card-tags {
+            gap: 4px;
+            max-width: 200px;
+
+
+        }
+    }
+
+    .custom-carousel-container {
+        width: 112% !important;
+        padding: 0 !important;
+        max-width: 112% !important;
+        margin: 0 !important;
+
+    }
 }
 
 @media (max-width: 420px) {
