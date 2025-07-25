@@ -233,6 +233,7 @@ input::-webkit-inner-spin-button {
     gap: 36px;
     width: 100%;
     justify-content: center;
+    margin-bottom: 24px;
 
 }
 
@@ -260,6 +261,17 @@ input::-webkit-inner-spin-button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
+
+
+}
+
+.guide-card,
+.route-card {
+    padding: 24px;
+    background-color: #ffffffad;
+    max-width: 400px;
+    min-height: 230px;
+    width: 100%;
 }
 
 .guide-cards-wrapper {
@@ -650,7 +662,7 @@ input::-webkit-inner-spin-button {
 }
 
 .swiper-slide {
-    min-height: 300px !important;
+    min-height: 350px !important;
     padding: 32px 24px !important;
 
 }
@@ -784,6 +796,18 @@ input::-webkit-inner-spin-button {
         }
 
 
+
+    }
+
+    .guide-card {
+        max-width: 100% !important;
+    }
+
+    .guide-card,
+    .route-card {
+        .card {
+            max-width: 100% !important;
+        }
     }
 
     .contact-cards {
@@ -798,6 +822,8 @@ input::-webkit-inner-spin-button {
             max-width: 100% !important;
         }
     }
+
+
 
     .card {
         max-width: 70% !important;
@@ -881,6 +907,12 @@ input::-webkit-inner-spin-button {
 
 
         }
+    }
+
+    .info-wrapper {
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
     }
 }
 

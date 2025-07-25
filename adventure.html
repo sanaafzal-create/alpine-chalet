@@ -80,7 +80,7 @@
                 <!-- <div id="splide" class="splide">
                     <div class="splide__track">
                         <ul class="splide__list adventure-cards">
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-1.png" alt="flamming" class="card-img">
@@ -103,7 +103,7 @@
                                 </div>
 
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-2.png" alt="flamming" class="card-img">
@@ -125,7 +125,7 @@
                                 </div>
 
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
@@ -147,7 +147,7 @@
                                 </div>
 
                             </li>
-                            <li class="splide__slide card guide-card ">
+                            <li class="splide__slide guide-card ">
 
 
                                 <img src="./assets/adventure-img-4.png" alt="flamming" class="card-img">
@@ -171,7 +171,7 @@
 
 
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
@@ -201,7 +201,7 @@
                     <button class="carousel-btn prev" onclick="moveSlide(-1)">‹</button>
                     <div class="carousel-track-wrapper">
                         <ul class="carousel-track">
-                            <li class="card guide-card">
+                            <li class="guide-card">
                                 <img src="./assets/adventure-img-1.png" alt="Image 1" class="card-img" />
                                 <div class="card-hero-content">
                                     <div class="card-content">
@@ -216,7 +216,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-2.png" alt="flamming" class="card-img">
@@ -238,7 +238,7 @@
                                 </div>
 
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
@@ -260,7 +260,7 @@
                                 </div>
 
                             </li>
-                            <li class="splide__slide card guide-card ">
+                            <li class="splide__slide guide-card ">
 
 
                                 <img src="./assets/adventure-img-4.png" alt="flamming" class="card-img">
@@ -284,7 +284,7 @@
 
 
                             </li>
-                            <li class="splide__slide card guide-card">
+                            <li class="splide__slide guide-card">
 
 
                                 <img src="./assets/adventure-img-3.png" alt="flamming" class="card-img">
@@ -366,9 +366,9 @@
         // Pause on hover, resume on leave
         const carouselContainer = document.querySelector(".custom-carousel-container");
         carouselContainer.addEventListener("mouseenter", () => clearInterval(autoplayInterval));
-        carouselContainer.addEventListener("mouseleave", () => {
-            autoplayInterval = setInterval(() => moveSlide(1), 3000);
-        });
+        // carouselContainer.addEventListener("mouseleave", () => {
+        //     autoplayInterval = setInterval(() => moveSlide(1), 3000);
+        // });
 
 
         window.addEventListener("resize", updateSlidePosition);
