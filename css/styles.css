@@ -1028,6 +1028,30 @@ input::-webkit-inner-spin-button {
         object-fit: cover !important;
     }
 
+    .checkboxes,
+    .feedback {
+        .card {
+            max-width: 90% !important;
+        }
+    }
+
+    .feedback-cards {
+        form {
+            textarea {
+                max-width: 85% !important;
+            }
+        }
+    }
+
+    .checkbox-cards,
+    .feedback-cards {
+        padding: 48px 28px !important;
+    }
+
+    .star-widget label {
+        font-size: 32px !important;
+    }
+
 }
 
 @media (max-width: 420px) {
