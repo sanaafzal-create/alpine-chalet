@@ -815,12 +815,14 @@ input::-webkit-inner-spin-button {
         margin-top: 24px !important;
 
         button {
-
+            white-space: nowrap;
             margin: 0 !important;
             min-width: 150px !important;
         }
 
-
+        .button {
+            font-size: 16px !important;
+        }
 
     }
 
