@@ -1063,7 +1063,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
 
     .mobile-btn-next,
     .mobile-btn-prev {
