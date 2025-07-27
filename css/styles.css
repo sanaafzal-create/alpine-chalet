@@ -905,7 +905,7 @@ input::-webkit-inner-spin-button {
     .mobile-btn-next,
     .mobile-btn-prev {
         display: flex !important;
-        top: 60% !important;
+        top: 80% !important;
         right: 6px !important;
         height: 40px !important;
         width: 40px !important;
