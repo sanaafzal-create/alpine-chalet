@@ -55,3 +55,23 @@
 .carousel-btn:hover {
     background-color: #444;
 }
+
+@media (max-width: 640px) {
+    .carousel-btn {
+        height: 40px !important;
+        width: 40px !important;
+
+        svg {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    .prev {
+        margin-right: 10px;
+    }
+
+    .next {
+        margin-left: 10px;
+    }
+}
