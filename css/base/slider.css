@@ -60,18 +60,18 @@
     .carousel-btn {
         height: 40px !important;
         width: 40px !important;
+        background-color: transparent !important;
 
-        svg {
-            height: 24px;
-            width: 24px;
-        }
+
+
     }
 
     .prev {
-        margin-right: 10px;
+        margin-right: 4px;
+
     }
 
     .next {
-        margin-left: 10px;
+        margin-left: 4px;
     }
 }
