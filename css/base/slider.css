@@ -62,7 +62,10 @@
         width: 40px !important;
         background-color: transparent !important;
 
-
+        svg {
+            height: 48px;
+            width: 48px;
+        }
 
     }
 
